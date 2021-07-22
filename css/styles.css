@@ -65,7 +65,7 @@ body::-webkit-scrollbar {
 
 .scroll-down {
     position: absolute;
-            height: 230px;
+            height: 160px;
         width: 70px;
             bottom: 0px;
 }
@@ -77,7 +77,7 @@ body::-webkit-scrollbar {
 }
 
 
-@media only screen and (max-device-width: 1500px){
+@media only screen and (max-width: 1500px){
     .banner-video {
         height: 100%;
     }

@@ -21,7 +21,7 @@ let droneNo = 0;
             droneNo =0;
         }
 
-    }, 180);
+    }, 100);
 
 }
 function positionScrollIcons() {
@@ -31,7 +31,7 @@ function positionScrollIcons() {
 
             drone.style.top = topY+"px";
 
-            topY = topY + 15;
+            topY = topY + 12;
         }
 }
 
@@ -46,7 +46,7 @@ function fade(element) {
         element.style.opacity = op;
         element.style.filter = 'alpha(opacity=' + op * 100 + ")";
         op -= op * 0.1;
-    }, 30);
+    }, 20);
 }
 
 
