@@ -1,0 +1,118 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+        background-color: #f8f8f8;
+        overflowY: hidden;
+        -ms-overflow-style: none;
+          scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+       display: none;
+     }
+
+.logo {
+    width: 150px;
+}
+
+.w3-card .logo {
+    width: 50px;
+
+}
+
+.banner-video {
+    display: flex;
+    background: darkblue;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+.banner-video video {
+        width: 100%;
+        object-fit: cover;
+        opacity: 0.8;
+}
+
+.banner-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.banner-content .title{
+    color: white;
+        text-align: center;
+
+        font-family: 'Bree Serif', serif;
+}
+
+.title-head{
+    line-height: 9vw;
+    font-size: 7vw;
+    font-style: italic;
+        letter-spacing: 20px;
+}
+
+.title-sub{
+    font-size: 1vw;
+    letter-spacing: 36px;
+}
+
+
+.scroll-down {
+    position: absolute;
+            height: 230px;
+        width: 70px;
+            bottom: 0px;
+}
+.scroll-down-img {
+    width: 70px;
+    position: absolute;
+    display: none;
+    opacity = 0.1;
+}
+
+
+@media only screen and (max-device-width: 1500px){
+    .banner-video {
+        height: 100%;
+    }
+
+    .banner-video video {
+        height: 100%;
+
+    }
+
+    .scroll-down{
+        bottom:0px;
+    }
+
+    .title-head{
+        line-height: 14vw;
+        font-size: 11vw;
+        font-style: italic;
+        letter-spacing: 14px;
+    }
+
+    .title-sub{
+        font-size: 3vw;
+        letter-spacing: 6px;
+    }
+
+}
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+}
+
+.grey {
+    background-color: #f8f8f8;
+
+    }
+
+
+ //   border-radius: .375rem;
