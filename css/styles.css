@@ -1,16 +1,17 @@
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-        background-color: #f8f8f8;
-        overflowY: hidden;
-        -ms-overflow-style: none;
-          scrollbar-width: none;
+    background-color: #f8f8f8;
+    overflowY: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
+
 body::-webkit-scrollbar {
-       display: none;
-     }
+    display: none;
+}
 
 .logo {
     width: 150px;
@@ -18,7 +19,6 @@ body::-webkit-scrollbar {
 
 .w3-card .logo {
     width: 50px;
-
 }
 
 .banner-video {
@@ -28,6 +28,7 @@ body::-webkit-scrollbar {
     flex-direction: column;
     align-items: center;
 }
+
 .banner-video video {
         width: 100%;
         object-fit: cover;
@@ -45,16 +46,15 @@ body::-webkit-scrollbar {
 
 .banner-content .title{
     color: white;
-        text-align: center;
-
-        font-family: 'Bree Serif', serif;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
 }
 
 .title-head{
     line-height: 9vw;
     font-size: 7vw;
     font-style: italic;
-        letter-spacing: 20px;
+    letter-spacing: 20px;
 }
 
 .title-sub{
@@ -65,9 +65,9 @@ body::-webkit-scrollbar {
 
 .scroll-down {
     position: absolute;
-            height: 160px;
-        width: 70px;
-            bottom: 0px;
+    height: 160px;
+    width: 70px;
+    bottom: 0px;
 }
 .scroll-down-img {
     width: 70px;
@@ -76,6 +76,25 @@ body::-webkit-scrollbar {
     opacity = 0.1;
 }
 
+.services{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.service-box{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: .3rem;
+    -webkit-box-shadow: 0 7px 14px 0 rgb(65 69 88 / 10%), 0 3px 6px 0 rgb(0 0 0 / 7%);
+    box-shadow: 0 7px 14px 0 rgb(65 69 88 / 10%), 0 3px 6px 0 rgb(0 0 0 / 7%);
+    margin: 35px 0 15px;
+}
+
+.service{
+    text-align: center;
+}
 
 @media only screen and (max-width: 1500px){
     .banner-video {
@@ -84,7 +103,6 @@ body::-webkit-scrollbar {
 
     .banner-video video {
         height: 100%;
-
     }
 
     .scroll-down{
@@ -111,8 +129,5 @@ body::-webkit-scrollbar {
 
 .grey {
     background-color: #f8f8f8;
+}
 
-    }
-
-
- //   border-radius: .375rem;
