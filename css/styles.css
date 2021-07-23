@@ -91,6 +91,15 @@ body::-webkit-scrollbar {
     box-shadow: 0 7px 14px 0 rgb(65 69 88 / 10%), 0 3px 6px 0 rgb(0 0 0 / 7%);
     margin: 35px 0 15px;
 }
+.service-box video{
+    width: 100%;
+    object-fit: cover;
+    border-radius: .3rem;
+}
+.service-box.image {
+    background-image: url('../assets/sphere_thumb_pcim.jpg');
+    background-size: contain;
+}
 
 .service{
     text-align: center;
