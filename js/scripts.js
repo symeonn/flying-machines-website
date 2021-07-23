@@ -2,10 +2,14 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 function init() {
+
 positionScrollIcons();
 
 scrollHint();
+
+        AOS.init();
 }
+
 function scrollHint() {
     let drones = document.getElementsByClassName('scroll-down-img');
 
