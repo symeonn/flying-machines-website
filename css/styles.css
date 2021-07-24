@@ -125,6 +125,29 @@ body::-webkit-scrollbar {
     padding: 20px;
 }
 
+.pilot-info{
+    display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+            margin-top: 35px;
+                justify-content: space-between;
+}
+
+.pilot-img {
+        background: linear-gradient(to right, #33ccff00 0%, #ff0066 100%);
+        width: 50%;
+            padding-top: 30px;
+            text-align: center;
+}
+
+.pilot-img img {
+    max-height: 240px;
+}
+
+.pilot-data {
+        padding: 20px;
+}
 
 @media only screen and (max-device-width: 1300px){
     .banner-video {
@@ -151,9 +174,23 @@ body::-webkit-scrollbar {
         letter-spacing: 6px;
     }
 
+    .drone-info {
+        justify-content: center;
+    }
+
     .drone-img {
         width: 100%;
             background-color: #33ccff;
+
+    }
+
+
+    .pilot-info {
+        justify-content: center;
+    }
+    .pilot-img {
+        width: 100%;
+            background-color: #ff0066;
 
     }
 
