@@ -149,6 +149,10 @@ body::-webkit-scrollbar {
         padding: 20px;
 }
 
+footer{
+    background-color: #eaeaea;
+}
+
 @media only screen and (max-device-width: 1300px){
     .banner-video {
         height: 100%;

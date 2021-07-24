@@ -1,265 +1,210 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Maszyny Latające</title>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Maszyny Latające</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./index_files/w3.css">
-    <link rel="stylesheet" href="./css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./index_files/w3.css">
+        <link rel="stylesheet" href="./css/styles.css">
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="./js/scripts.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="./js/scripts.js"></script>
 
-    <link rel="stylesheet" href="./index_files/css">
-    <link rel="stylesheet" href="./index_files/font-awesome.min.css">
-    <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-  height: 100%;
-  color: #777;
-  line-height: 1.8;
-}
+        <link rel="stylesheet" href="./index_files/css">
+        <link rel="stylesheet" href="./index_files/font-awesome.min.css">
+        <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+    body, html {
+      height: 100%;
+      color: #777;
+      line-height: 1.8;
+    }
 
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+    /* Create a Parallax Effect */
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
 
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url('index_files/parallax1.jpg');
-  min-height: 100%;
-}
+    /* First image (Logo. Full height) */
+    .bgimg-1 {
+      background-image: url('index_files/parallax1.jpg');
+      min-height: 100%;
+    }
 
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url("index_files/parallax2.jpg");
-  min-height: 400px;
-}
+    /* Second image (Portfolio) */
+    .bgimg-2 {
+      background-image: url("index_files/parallax2.jpg");
+      min-height: 400px;
+    }
 
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("index_files/parallax3.jpg");
-  min-height: 400px;
-}
+    /* Third image (Contact) */
+    .bgimg-3 {
+      background-image: url("index_files/parallax3.jpg");
+      min-height: 400px;
+    }
 
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
+    .w3-wide {letter-spacing: 10px;}
+    .w3-hover-opacity {cursor: pointer;}
 
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1500px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-}
-
-
-    </style>
-</head>
-
-<body>
-
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-    <div class="w3-bar" id="myNavbar">
-        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
-           onclick="toggleFunction()" title="Toggle Navigation Menu">
-            X
-        </a>
-
-        <a href="index.html" class="w3-bar-item"><img class="logo" src="./assets/ML_LOGO.png" alt="LOGO"></a>
-        <a href="#home" class="w3-bar-item w3-button w3-hide-small">HOME</a>
-        <a href="#services" class="w3-bar-item w3-button w3-hide-small">SERVICES</a>
-        <a href="#inquires" class="w3-bar-item w3-button w3-hide-small">INQUIRES</a>
-        <a href="#drones" class="w3-bar-item w3-button w3-hide-small">OUR DRONES</a>
-        <a href="#pilots" class="w3-bar-item w3-button w3-hide-small">OUR PILOTS</a>
-        <a href="#join" class="w3-bar-item w3-button w3-hide-small">JOIN US</a>
-        <a href="#examples" class="w3-bar-item w3-button w3-hide-small">EXAMPLES</a>
-    </div>
-
-    <!-- Navbar on small screens -->
-    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-
-        <a href="#home" class="w3-bar-item w3-button" onclick="toggleFunction()">HOME</a>
-        <a href="#services" class="w3-bar-item w3-button" onclick="toggleFunction()">SERVICES</a>
-        <a href="#inquires" class="w3-bar-item w3-button" onclick="toggleFunction()">INQUIRES</a>
-        <a href="#drones" class="w3-bar-item w3-button" onclick="toggleFunction()">OUR DRONES</a>
-        <a href="#pilots" class="w3-bar-item w3-button" onclick="toggleFunction()">OUR PILOTS</a>
-        <a href="#join" class="w3-bar-item w3-button" onclick="toggleFunction()">JOIN US</a>
-        <a href="#examples" class="w3-bar-item w3-button" onclick="toggleFunction()">EXAMPLES</a>
-    </div>
-</div>
-
-<!-- First Parallax Image with Logo Text -->
-<!--<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">-->
-<!--    <div class="w3-display-middle" style="white-space:nowrap;">-->
-<!--        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span-->
-<!--                class="w3-hide-small">WEBSITE</span> LOGO</span>-->
-<!--    </div>-->
-<!--</div>-->
-
-<div class="banner-video" id="home">
-    <video autoplay  muted src="assets/banner.mp4"></video>
-    <div class="banner-content">
-
-        <div class="title">
-            <div class="title-head">Maszyny Latające</div>
-            <div class="title-sub">Drones, at your service!</div>
-        </div>
-        <div class="scroll-down">
-            <img class="scroll-down-img"  src="./assets/parrot-usa-white-small.png">
-            <img class="scroll-down-img " src="./assets/parrot-usa-white-small.png">
-            <img class="scroll-down-img " src="./assets/parrot-usa-white-small.png">
-            <img class="scroll-down-img " src="./assets/parrot-usa-white-small.png">
-            <img class="scroll-down-img " src="./assets/parrot-usa-white-small.png">
-            <img class="scroll-down-img " src="./assets/parrot-usa-white-small.png">
-            <img class="scroll-down-img " src="./assets/parrot-usa-white-small.png">
-            <img class="scroll-down-img " src="./assets/parrot-usa-white-small.png">
-            <img class="scroll-down-img " src="./assets/parrot-usa-white-small.png">
-            <img class="scroll-down-img " src="./assets/parrot-usa-white-small.png">
-        </div>
-
-    </div>
-</div>
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1500px) {
+      .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+        min-height: 400px;
+      }
+    }
 
 
-<div class="w3-content w3-container w3-padding-64" id="services">
-    <h3 class="w3-center">SERVICES</h3>
-    <p class="w3-center"><em>We can serve following services for you: </em></p>
+        </style>
+    </head>
 
-<div class="services">
-    <div class="service"><div class="service-box"><video autoplay loop muted src="assets/video_thumb_view.mp4"></video></div><div>Video and edit</div></div>
-    <div class="service"><div class="service-box image"></div><div>Sphere and aerial<br>photography</div></div>
-    <div class="service"><div class="service-box video"><video autoplay loop muted src="assets/video_thumb_perma.mp4"></video></div><div>Landscaping</div></div>
-    <div class="service"><div class="service-box video"><video autoplay loop muted src="assets/video_thumb_solar.mp4"></video></div><div>Solar panels inspection</div></div>
-</div>
+    <body>
 
+        <div class="w3-top">
+            <div class="w3-bar" id="myNavbar">
+                <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
+                   onclick="toggleFunction()" title="Toggle Navigation Menu">
+                    X
+                </a>
 
+                <a href="index.html" class="w3-bar-item"><img class="logo" src="./assets/ML_LOGO.png" alt="LOGO"></a>
+                <a href="#home" class="w3-bar-item w3-button w3-hide-small">HOME</a>
+                <a href="#services" class="w3-bar-item w3-button w3-hide-small">SERVICES</a>
+                <a href="#inquires" class="w3-bar-item w3-button w3-hide-small">INQUIRES</a>
+                <a href="#drones" class="w3-bar-item w3-button w3-hide-small">OUR DRONES</a>
+                <a href="#pilots" class="w3-bar-item w3-button w3-hide-small">OUR PILOTS</a>
+                <a href="#join" class="w3-bar-item w3-button w3-hide-small">JOIN US</a>
+                <a href="#examples" class="w3-bar-item w3-button w3-hide-small">EXAMPLES</a>
+            </div>
 
-
-
-</div>
-
-<div class="w3-row w3-center w3-container grey w3-padding-64" id="inquires">
-    <h3 class="w3-center">INQUIRES</h3>
-
-
-    <p class="w3-center">To make an inquiry contact me on:</p>
-
-    <div class="w3-row w3-padding-32 w3-section">
-        <div class="w3-col m4 w3-container">
-            <img src="./index_files/map.jpg" class="w3-image w3-round" style="width:100%">
-        </div>
-        <div class="w3-col m8 w3-panel">
-            <div class="w3-large w3-margin-bottom">
-                <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-                <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
-                <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
-                mail@mail.com<br>
+            <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+                <a href="#home" class="w3-bar-item w3-button" onclick="toggleFunction()">HOME</a>
+                <a href="#services" class="w3-bar-item w3-button" onclick="toggleFunction()">SERVICES</a>
+                <a href="#inquires" class="w3-bar-item w3-button" onclick="toggleFunction()">INQUIRES</a>
+                <a href="#drones" class="w3-bar-item w3-button" onclick="toggleFunction()">OUR DRONES</a>
+                <a href="#pilots" class="w3-bar-item w3-button" onclick="toggleFunction()">OUR PILOTS</a>
+                <a href="#join" class="w3-bar-item w3-button" onclick="toggleFunction()">JOIN US</a>
+                <a href="#examples" class="w3-bar-item w3-button" onclick="toggleFunction()">EXAMPLES</a>
             </div>
         </div>
-    </div>
 
-</div>
+        <div class="banner-video" id="home">
+            <video autoplay  muted src="assets/banner.mp4"></video>
+            <div class="banner-content">
 
-<div class="w3-content w3-padding-64" id="drones">
-    <h3 class="w3-center">OUR DRONES</h3>
-
-    <div class="drone-info">
-        <div class="drone-img" data-aos="fade-right" data-aos-duration="800" data-aos-offset="200">
-            <img src="./assets/parrot-anafi.png">
-        </div>
-        <div class="drone-data">
-            <b>Parrot Anafi</b>
-            <ul>
-                <li>4K video</li>
-                <li>Zoom</li>
-                <li><nobr>Camera vertical angle 180°<br>(recording what's above the drone)</nobr></li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<div class="w3-content w3-padding-64" id="pilots">
-    <h3 class="w3-center">OUR PILOTS</h3>
-
-    <div class="pilot-info">
-        <div class="pilot-img" data-aos="fade-up" data-aos-duration="800" data-aos-offset="200">
-            <img src="./assets/pilot-mario.webp">
-        </div>
-        <div class="pilot-data">
-            <b>Mario</b>
-            <ul>
-                <li>Experienced pilot</li>
-                <li>Licensed</li>
-                <li>Responsible</li>
-            </ul>
+                <div class="title">
+                    <div class="title-head">Maszyny Latające</div>
+                    <div class="title-sub">Drones, at your service!</div>
+                </div>
+                <div class="scroll-down">
+                    <img class="scroll-down-img"  src="./assets/parrot-usa-white-small.png">
+                    <img class="scroll-down-img " src="./assets/parrot-usa-white-small.png">
+                    <img class="scroll-down-img " src="./assets/parrot-usa-white-small.png">
+                    <img class="scroll-down-img " src="./assets/parrot-usa-white-small.png">
+                    <img class="scroll-down-img " src="./assets/parrot-usa-white-small.png">
+                    <img class="scroll-down-img " src="./assets/parrot-usa-white-small.png">
+                    <img class="scroll-down-img " src="./assets/parrot-usa-white-small.png">
+                    <img class="scroll-down-img " src="./assets/parrot-usa-white-small.png">
+                    <img class="scroll-down-img " src="./assets/parrot-usa-white-small.png">
+                    <img class="scroll-down-img " src="./assets/parrot-usa-white-small.png">
+                </div>
+            </div>
         </div>
 
+        <div class="w3-content w3-container w3-padding-64" id="services">
+            <h3 class="w3-center">SERVICES</h3>
+            <p class="w3-center"><em>We can serve following services for you: </em></p>
 
-    </div>
-</div>
+            <div class="services">
+                <div class="service"><div class="service-box"><video autoplay loop muted src="assets/video_thumb_view.mp4"></video></div><div>Video and edit</div></div>
+                <div class="service"><div class="service-box image"></div><div>Sphere and aerial<br>photography</div></div>
+                <div class="service"><div class="service-box video"><video autoplay loop muted src="assets/video_thumb_perma.mp4"></video></div><div>Landscaping</div></div>
+                <div class="service"><div class="service-box video"><video autoplay loop muted src="assets/video_thumb_solar.mp4"></video></div><div>Solar panels inspection</div></div>
+            </div>
+        </div>
 
+        <div class="w3-row w3-center w3-container grey w3-padding-64" id="inquires">
+            <h3 class="w3-center">INQUIRES</h3>
 
-<div class="w3-content w3-container w3-padding-64" id="join">
-    <h3 class="w3-center">JOIN US</h3>
-</div>
+            <p class="w3-center">To make an inquiry contact me on:</p>
 
-<div class="w3-content w3-container w3-padding-64" id="examples">
-    <h3 class="w3-center">EXAMPLES</h3>
-</div>
+            <div class="w3-row w3-padding-32 w3-section">
+                <div class="w3-col m4 w3-container">
+                    <img src="./index_files/map.jpg" class="w3-image w3-round" style="width:100%">
+                </div>
+                <div class="w3-col m8 w3-panel">
+                    <div class="w3-large w3-margin-bottom">
+                        <br>
+                        Phone: +48 500 707 987<br>
+                        Email: <a href="mailto:maszynylatajace24@gmail.com">maszynylatajace24@gmail.com</a>  <br>
+                        Poland, pomerian
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="w3-content w3-padding-64" id="drones">
+            <h3 class="w3-center">OUR DRONES</h3>
 
-<!-- Footer -->
-<footer class="w3-center w3-opacity w3-hover-opacity-off">
-    <p>Made <a href="https://www.linkedin.com/in/lewandowskim/" title="Profile" target="_blank"
-               class="w3-hover-text-green">by.mario</a></p>
-</footer>
+            <div class="drone-info">
+                <div class="drone-img" data-aos="fade-right" data-aos-duration="800" data-aos-offset="200">
+                    <img src="./assets/parrot-anafi.png">
+                </div>
+                <div class="drone-data">
+                    <b>Parrot Anafi</b>
+                    <ul>
+                        <li>4K video</li>
+                        <li>Zoom</li>
+                        <li><nobr>Camera vertical angle 180°<br>(recording what's above the drone)</nobr></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
+        <div class="w3-content w3-padding-64" id="pilots">
+            <h3 class="w3-center">OUR PILOTS</h3>
 
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
+            <div class="pilot-info">
+                <div class="pilot-img" data-aos="fade-up" data-aos-duration="800" data-aos-offset="200">
+                    <img src="./assets/pilot-mario.webp">
+                </div>
+                <div class="pilot-data">
+                    <b>Mario</b>
+                    <ul>
+                        <li>Experienced pilot</li>
+                        <li>Licensed</li>
+                        <li>Responsible</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
+        <div class="w3-content w3-container w3-padding-64" id="join">
+            <h3 class="w3-center">JOIN US</h3>
+            <div>
+                Do you have a legally recorded videos, photos, spheres idle on you hard drive, without idea that to do with it? <br>
+                Let us know, maybe together we will make it viral or even monetize your material!
+            </div>
+        </div>
 
+        <div class="w3-content w3-container w3-padding-64" id="examples">
+            <h3 class="w3-center">EXAMPLES</h3>
+        </div>
 
-</script>
+        <footer class="w3-center w3-opacity w3-hover-opacity-off">
+            <p class="footer-text">Made <a href="https://www.linkedin.com/in/lewandowskim/" title="Profile" target="_blank"
+                       class="w3-hover-text-green">by.mario</a></p>
+        </footer>
 
-
-</body>
+    </body>
 </html>
