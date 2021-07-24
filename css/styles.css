@@ -97,7 +97,7 @@ body::-webkit-scrollbar {
     border-radius: .3rem;
 }
 .service-box.image {
-    background-image: url('../assets/sphere_thumb_pcim.jpg');
+    background-image: url('../assets/sphere_thumb_pcim.webp');
     background-size: contain;
 }
 
