@@ -105,13 +105,24 @@ body::-webkit-scrollbar {
     text-align: center;
 }
 
-.drone {
-    height: 300px;
-    background-color: #e3e3e2;
+.drone-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+        margin-top: 35px;
 }
 
-.drone img {
-    width: 500px;
+.drone-img {
+    width: 50%;
+    background: linear-gradient(to right, #33ccff 0%, #ff99cc00 100%);
+}
+
+.drone-img img {
+    width: 100%;
+}
+
+.drone-data{
+    padding: 20px;
 }
 
 
@@ -138,6 +149,12 @@ body::-webkit-scrollbar {
     .title-sub{
         font-size: 3vw;
         letter-spacing: 6px;
+    }
+
+    .drone-img {
+        width: 100%;
+            background-color: #33ccff;
+
     }
 
 }
