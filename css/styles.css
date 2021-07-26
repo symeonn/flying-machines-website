@@ -13,6 +13,35 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+.center {
+        text-align: center
+}
+.section {
+        padding-top: 64px;
+}
+
+.padding-sides {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.opacity{
+    opacity: 0.60;
+}
+.hover-opacity-off:hover{
+    opacity:1
+}
+
+.hover-text-green:hover{
+    color:#4CAF50
+}
+
+.top-menu {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+
 .logo {
     width: 120px;
 }
@@ -30,9 +59,9 @@ body::-webkit-scrollbar {
 }
 
 .banner-video video {
-        width: 100%;
-        object-fit: cover;
-        opacity: 0.8;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.8;
 }
 
 .banner-content {
@@ -62,7 +91,6 @@ body::-webkit-scrollbar {
     letter-spacing: 30px;
 }
 
-
 .scroll-down {
     position: absolute;
     height: 160px;
@@ -91,11 +119,13 @@ body::-webkit-scrollbar {
     box-shadow: 0 7px 14px 0 rgb(65 69 88 / 10%), 0 3px 6px 0 rgb(0 0 0 / 7%);
     margin: 35px 0 15px;
 }
+
 .service-box video{
     width: 100%;
     object-fit: cover;
     border-radius: .3rem;
 }
+
 .service-box.image {
     background-image: url('../assets/sphere_thumb_pcim.webp');
     background-size: contain;
@@ -112,19 +142,20 @@ body::-webkit-scrollbar {
     align-items: center;
     justify-content: space-around;
 }
+
 .inquiry i{
         margin: 20px 0;
 }
 
 .inquiry-details {
     text-align: left;
-
 }
+
 .drone-info {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-        margin-top: 35px;
+    margin-top: 35px;
 }
 
 .drone-img {
@@ -142,18 +173,18 @@ body::-webkit-scrollbar {
 
 .pilot-info{
     display: flex;
-        flex-wrap: wrap;
-        flex-direction: row-reverse;
-        justify-content: space-around;
-            margin-top: 35px;
-                justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin-top: 35px;
+    justify-content: space-between;
 }
 
 .pilot-img {
-        background: linear-gradient(to right, #33ccff00 0%, #ff0066 100%);
-        width: 50%;
-            padding-top: 30px;
-            text-align: center;
+    background: linear-gradient(to right, #33ccff00 0%, #ff0066 100%);
+    width: 50%;
+    padding-top: 30px;
+    text-align: center;
 }
 
 .pilot-img img {
@@ -161,7 +192,7 @@ body::-webkit-scrollbar {
 }
 
 .pilot-data {
-        padding: 20px;
+    padding: 20px;
 }
 
 footer{
@@ -199,21 +230,18 @@ footer{
 
     .drone-img {
         width: 100%;
-            background-color: #33ccff;
-
+        background-color: #33ccff;
     }
-
 
     .pilot-info {
         justify-content: center;
     }
     .pilot-img {
         width: 100%;
-            background-color: #ff0066;
-
+        background-color: #ff0066;
     }
-
 }
+
 .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: scroll;
     min-height: 400px;
@@ -222,4 +250,3 @@ footer{
 .grey {
     background-color: #f8f8f8;
 }
-
