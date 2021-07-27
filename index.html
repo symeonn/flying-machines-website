@@ -26,6 +26,7 @@
 
         <link rel="stylesheet" href="./index_files/css">
         <link rel="stylesheet" href="./index_files/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <style>
     body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
     body, html {
@@ -75,7 +76,35 @@
 
     <body>
 
-        <div class="top-menu">
+        <div class="top-menu pl">
+            <div id="mainNavbar">
+                <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
+                   onclick="toggleFunction()" title="Toggle Navigation Menu">
+                    <i class="fas fa-bars"></i>
+                </a>
+
+                <a href="index.html" class="w3-bar-item"><img class="logo" src="./assets/ML_LOGO.webp" alt="LOGO"></a>
+                <a href="#home" class="w3-bar-item w3-button w3-hide-small">START</a>
+                <a href="#services" class="w3-bar-item w3-button w3-hide-small">USŁUGI</a>
+                <a href="#inquires" class="w3-bar-item w3-button w3-hide-small">ZAPYTANIA</a>
+                <a href="#drones" class="w3-bar-item w3-button w3-hide-small">NASZE DRONY</a>
+                <a href="#join" class="w3-bar-item w3-button w3-hide-small">DOŁĄCZ DO NAS</a>
+                <a href="#examples" class="w3-bar-item w3-button w3-hide-small" style="display:none">EXAMPLES</a>
+                <div class="w3-bar-item w3-button w3-hide-small lang-switch" onclick="toggleLanguage()">PL / EN</div>
+            </div>
+
+            <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+                <a href="#home" class="w3-bar-item w3-button" onclick="toggleFunction()">START</a>
+                <a href="#services" class="w3-bar-item w3-button" onclick="toggleFunction()">USŁUGI</a>
+                <a href="#inquires" class="w3-bar-item w3-button" onclick="toggleFunction()">ZAPYTANIA</a>
+                <a href="#drones" class="w3-bar-item w3-button" onclick="toggleFunction()">NASZE DRONY</a>
+                <a href="#join" class="w3-bar-item w3-button" onclick="toggleFunction()">DOŁĄCZ DO NAS</a>
+                <a href="#examples" class="w3-bar-item w3-button" style="display:none" onclick="toggleFunction()">EXAMPLES</a>
+                <div class="w3-bar-item w3-button lang-switch" onclick="toggleLanguage()">PL / EN</div>
+            </div>
+        </div>
+
+        <div class="top-menu en">
             <div id="mainNavbar">
                 <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
                    onclick="toggleFunction()" title="Toggle Navigation Menu">
@@ -89,6 +118,7 @@
                 <a href="#drones" class="w3-bar-item w3-button w3-hide-small">OUR DRONES</a>
                 <a href="#join" class="w3-bar-item w3-button w3-hide-small">JOIN US</a>
                 <a href="#examples" class="w3-bar-item w3-button w3-hide-small" style="display:none">EXAMPLES</a>
+                <div class="w3-bar-item w3-button w3-hide-small lang-switch" onclick="toggleLanguage()">PL / EN</div>
             </div>
 
             <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
@@ -98,16 +128,20 @@
                 <a href="#drones" class="w3-bar-item w3-button" onclick="toggleFunction()">OUR DRONES</a>
                 <a href="#join" class="w3-bar-item w3-button" onclick="toggleFunction()">JOIN US</a>
                 <a href="#examples" class="w3-bar-item w3-button" style="display:none" onclick="toggleFunction()">EXAMPLES</a>
+                <div class="w3-bar-item w3-button lang-switch" onclick="toggleLanguage()">PL / EN</div>
             </div>
-        </div>
 
+
+
+        </div>
         <div class="banner-video" id="home">
             <video autoplay  muted src="assets/banner.mp4"></video>
             <div class="banner-content">
 
                 <div class="title">
                     <div class="title-head">Maszyny Latające</div>
-                    <div class="title-sub">Drones, at your service!</div>
+                    <div class="title-sub pl">Drones, do Twoich usług!</div>
+                    <div class="title-sub en">Drones, at your service!</div>
                 </div>
                 <div class="scroll-down">
                     <img class="scroll-down-img"  src="./assets/parrot-usa-white-small.png">
@@ -124,9 +158,21 @@
             </div>
         </div>
 
-        <div class="section padding-sides" id="services">
+        <div class="section padding-sides pl" id="services">
+            <h3 class="center">USŁUGI</h3>
+            <p class="center"><em>Mamy następujące usługi:</em></p>
+
+            <div class="services">
+                <div class="service"><div class="service-box"><video autoplay loop muted src="assets/video_thumb_view.mp4"></video></div><div>Wideo i edycja</div></div>
+                <div class="service"><div class="service-box image"></div><div>Fotografia sferyczna i lotnicza</div></div>
+                <div class="service"><div class="service-box video"><video autoplay loop muted src="assets/video_thumb_perma.mp4"></video></div><div>Architektura krajobrazu</div></div>
+                <div class="service"><div class="service-box video"><video autoplay loop muted src="assets/video_thumb_solar.mp4"></video></div><div>Inspekcja paneli<br>fotowoltaicznych</div></div>
+            </div>
+        </div>
+
+        <div class="section padding-sides en" id="services">
             <h3 class="center">SERVICES</h3>
-            <p class="center"><em>We can serve following services for you: </em></p>
+            <p class="center"><em>We can serve following services for you:</em></p>
 
             <div class="services">
                 <div class="service"><div class="service-box"><video autoplay loop muted src="assets/video_thumb_view.mp4"></video></div><div>Video and edit</div></div>
@@ -136,7 +182,21 @@
             </div>
         </div>
 
-        <div class="section section-gray padding-sides" id="inquires">
+        <div class="section section-gray padding-sides pl" id="inquires">
+            <h3 class="center">ZAPYTANIA</h3>
+
+            <p class="center"><nobr>Potrzebujesz naszej usługi? <wbr>Zrób zapytanie pod:</nobr></p>
+            <div class="inquiry">
+                <div class="inquiry-icon">
+                    <i class="fas fa-question-circle fa-7x"></i>
+                </div>
+                <div class="inquiry-details">
+                    <i class="fas fa-mobile-alt"></i><nobr>Telefon: <wbr><a href="tel:+48500707987">+48 500 707 987 (kliknij żeby zadzwonić)</a></nobr><br>
+                    <i class="far fa-envelope"></i>Email: <a href="mailto:maszynylatajace24@gmail.com">maszynylatajace24@gmail.com (kliknij żeby napisać)</a><br>
+                </div>
+            </div>
+        </div>
+        <div class="section section-gray padding-sides en" id="inquires">
             <h3 class="center">INQUIRES</h3>
 
             <p class="center"><nobr>Need our drone service? <wbr>Make an inquiry on:</nobr></p>
@@ -151,7 +211,26 @@
             </div>
         </div>
 
-        <div class="section" id="drones">
+        <div class="section pl" id="drones">
+            <h3 class="center">NASZE DRONY</h3>
+
+            <div class="drone-info">
+                <div class="drone-img" data-aos="fade-right" data-aos-duration="800" data-aos-offset="200">
+                    <img src="./assets/parrot-anafi.webp">
+                </div>
+                <div class="drone-data">
+                    <b>Parrot Anafi</b>
+                    <ul>
+                        <li>4K wideo i zdjęcia</li>
+                        <li>Przybliżenie optyczne</li>
+                        <li><nobr>180° pionowy kąt widzenia kamery<br>(nagrywanie tego co powyżej drona)</nobr></li>
+                        <li>Mały i żwawy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section en" id="drones">
             <h3 class="center">OUR DRONES</h3>
 
             <div class="drone-info">
@@ -170,11 +249,20 @@
             </div>
         </div>
 
-        <div class="section section-gray padding-sides" id="join">
+        <div class="section section-gray padding-sides pl" id="join">
+            <h3 class="center">DOŁĄCZ DO NAS</h3>
+            <div>
+                Posiadasz legalnie nagrane filmy, zdjęcia, sferyczne zdjęcia, które bezczynnie leżą na dysku twardym i nie masz pojęcia, co z nimi zrobić?<br><br>
+                Daj nam znać, razem coś z tym zrobimy, sprawimy, że ktoś je zobaczy, a może nawet spieniężymy Twój materiał!<br><br>
+                <i><b>Pamiętaj:</b> Musisz mieć ważną licencję ULC.</i>
+            </div>
+        </div>
+
+        <div class="section section-gray padding-sides en" id="join">
             <h3 class="center">JOIN US</h3>
             <div>
-                Do you have a legally recorded videos, photos, spheres idle on you hard drive, without idea that to do with it?<br><br>
-                Let us know, together we will do something with it, make it viral or even monetize your material!<br><br>
+                Do you have legally recorded videos, photos, spherical photos that are idle on your hard drive and you have no idea what to do with them?<br><br>
+                Let us know, we'll do something together, make someone see it, and maybe even monetize your material!<br><br>
                 <i><b>Remember:</b> You need to have a valid ULC license.</i>
             </div>
         </div>

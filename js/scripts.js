@@ -88,4 +88,14 @@ function toggleFunction() {
     }
 }
 
+function toggleLanguage() {
+    if ($(".en").is(":hidden")) {
+        $(".pl").hide();
+        $(".en").show();
+    } else {
+        $(".pl").show();
+        $(".en").hide();
+    }
+}
+
 window.onload = init;

@@ -13,6 +13,9 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+.en {
+    display: none;
+}
 .center {
     text-align: center
 }
