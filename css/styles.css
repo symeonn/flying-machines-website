@@ -219,7 +219,10 @@ display:none;
 .pilot-data {
     padding: 20px;
 }
+.join-details i{
+    padding-right: 10px;
 
+}
 footer{
     background-color: #eaeaea;
 }
