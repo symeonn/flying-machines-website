@@ -19,6 +19,11 @@ body::-webkit-scrollbar {
 .center {
     text-align: center
 }
+
+#navDemo{
+display:none;
+}
+
 .section {
     padding-top: 32px;
     padding-bottom: 32px;

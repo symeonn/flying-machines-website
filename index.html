@@ -76,13 +76,13 @@
 
     <body>
 
-        <div class="top-menu pl">
+        <div class="top-menu">
             <div id="mainNavbar">
                 <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
-                   onclick="toggleFunction()" title="Toggle Navigation Menu">
+                   onclick="toggleMenu()" title="Toggle Navigation Menu">
                     <i class="fas fa-bars"></i>
                 </a>
-
+<span class="pl">
                 <a href="index.html" class="w3-bar-item"><img class="logo" src="./assets/ML_LOGO.webp" alt="LOGO"></a>
                 <a href="#home" class="w3-bar-item w3-button w3-hide-small">START</a>
                 <a href="#services" class="w3-bar-item w3-button w3-hide-small">USŁUGI</a>
@@ -90,57 +90,49 @@
                 <a href="#drones" class="w3-bar-item w3-button w3-hide-small">NASZE DRONY</a>
                 <a href="#join" class="w3-bar-item w3-button w3-hide-small">DOŁĄCZ DO NAS</a>
                 <a href="#examples" class="w3-bar-item w3-button w3-hide-small" style="display:none">EXAMPLES</a>
-                <div class="w3-bar-item w3-button w3-hide-small lang-switch" onclick="toggleLanguage()">PL / EN</div>
-            </div>
-
-            <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-                <a href="#home" class="w3-bar-item w3-button" onclick="toggleFunction()">START</a>
-                <a href="#services" class="w3-bar-item w3-button" onclick="toggleFunction()">USŁUGI</a>
-                <a href="#inquires" class="w3-bar-item w3-button" onclick="toggleFunction()">ZAPYTANIA</a>
-                <a href="#drones" class="w3-bar-item w3-button" onclick="toggleFunction()">NASZE DRONY</a>
-                <a href="#join" class="w3-bar-item w3-button" onclick="toggleFunction()">DOŁĄCZ DO NAS</a>
-                <a href="#examples" class="w3-bar-item w3-button" style="display:none" onclick="toggleFunction()">EXAMPLES</a>
-                <div class="w3-bar-item w3-button lang-switch" onclick="toggleLanguage()">PL / EN</div>
-            </div>
-        </div>
-
-        <div class="top-menu en">
-            <div id="mainNavbar">
-                <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
-                   onclick="toggleFunction()" title="Toggle Navigation Menu">
-                    <i class="fas fa-bars"></i>
-                </a>
-
-                <a href="index.html" class="w3-bar-item"><img class="logo" src="./assets/ML_LOGO.webp" alt="LOGO"></a>
+</span>
+                <span class="en">
+            <a href="index.html" class="w3-bar-item"><img class="logo" src="./assets/ML_LOGO.webp" alt="LOGO"></a>
                 <a href="#home" class="w3-bar-item w3-button w3-hide-small">HOME</a>
                 <a href="#services" class="w3-bar-item w3-button w3-hide-small">SERVICES</a>
                 <a href="#inquires" class="w3-bar-item w3-button w3-hide-small">INQUIRES</a>
                 <a href="#drones" class="w3-bar-item w3-button w3-hide-small">OUR DRONES</a>
                 <a href="#join" class="w3-bar-item w3-button w3-hide-small">JOIN US</a>
                 <a href="#examples" class="w3-bar-item w3-button w3-hide-small" style="display:none">EXAMPLES</a>
+                </span>
                 <div class="w3-bar-item w3-button w3-hide-small lang-switch" onclick="toggleLanguage()">PL / EN</div>
             </div>
 
-            <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-                <a href="#home" class="w3-bar-item w3-button" onclick="toggleFunction()">HOME</a>
-                <a href="#services" class="w3-bar-item w3-button" onclick="toggleFunction()">SERVICES</a>
-                <a href="#inquires" class="w3-bar-item w3-button" onclick="toggleFunction()">INQUIRES</a>
-                <a href="#drones" class="w3-bar-item w3-button" onclick="toggleFunction()">OUR DRONES</a>
-                <a href="#join" class="w3-bar-item w3-button" onclick="toggleFunction()">JOIN US</a>
-                <a href="#examples" class="w3-bar-item w3-button" style="display:none" onclick="toggleFunction()">EXAMPLES</a>
-                <div class="w3-bar-item w3-button lang-switch" onclick="toggleLanguage()">PL / EN</div>
+
+            <div id="navDemo" class="w3-bar-block w3-white">
+               <span class="pl">
+                   <a href="#home" class="w3-bar-item w3-button" onclick="toggleMenu()">START</a>
+                <a href="#services" class="w3-bar-item w3-button" onclick="toggleMenu()">USŁUGI</a>
+                <a href="#inquires" class="w3-bar-item w3-button" onclick="toggleMenu()">ZAPYTANIA</a>
+                <a href="#drones" class="w3-bar-item w3-button" onclick="toggleMenu()">NASZE DRONY</a>
+                <a href="#join" class="w3-bar-item w3-button" onclick="toggleMenu()">DOŁĄCZ DO NAS</a>
+                <a href="#examples" class="w3-bar-item w3-button" style="display:none" onclick="toggleMenu()">EXAMPLES</a>
+</span>
+                <span class="en">
+                <a href="#home" class="w3-bar-item w3-button" onclick="toggleMenu()">HOME</a>
+                <a href="#services" class="w3-bar-item w3-button" onclick="toggleMenu()">SERVICES</a>
+                <a href="#inquires" class="w3-bar-item w3-button" onclick="toggleMenu()">INQUIRES</a>
+                <a href="#drones" class="w3-bar-item w3-button" onclick="toggleMenu()">OUR DRONES</a>
+                <a href="#join" class="w3-bar-item w3-button" onclick="toggleMenu()">JOIN US</a>
+                <a href="#examples" class="w3-bar-item w3-button" style="display:none" onclick="toggleMenu()">EXAMPLES</a>
+                </span>
+                <div class="w3-bar-item w3-button lang-switch" onclick="toggleLanguage(); toggleMenu();">PL / EN</div>
             </div>
 
-
-
         </div>
+
         <div class="banner-video" id="home">
             <video autoplay  muted src="assets/banner.mp4"></video>
             <div class="banner-content">
 
                 <div class="title">
                     <div class="title-head">Maszyny Latające</div>
-                    <div class="title-sub pl">Drones, do Twoich usług!</div>
+                    <div class="title-sub pl">Drony, do Twoich usług!</div>
                     <div class="title-sub en">Drones, at your service!</div>
                 </div>
                 <div class="scroll-down">

@@ -79,23 +79,24 @@ function myFunction() {
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
+function toggleMenu() {
+
+    if ($("#navDemo").is(":hidden")) {
+            $("#navDemo").show();
+        } else {
+            $("#navDemo").hide();
+        }
 }
 
 function toggleLanguage() {
-    if ($(".en").is(":hidden")) {
-        $(".pl").hide();
-        $(".en").show();
-    } else {
+    if ($(".en").is(":visible")) {
         $(".pl").show();
         $(".en").hide();
+    } else {
+        $(".en").show();
+        $(".pl").hide();
     }
 }
+
 
 window.onload = init;
