@@ -73,7 +73,6 @@ display:none;
 
 .banner-video {
     display: flex;
-    background: darkblue;
     justify-content: flex-end;
     flex-direction: column;
     align-items: center;
