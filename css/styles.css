@@ -37,6 +37,12 @@ display:none;
     padding-left: 15%;
     padding-right: 15%;
 }
+
+.padding-sides-small {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
 .opacity{
     opacity: 0.60;
 }
