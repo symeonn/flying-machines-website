@@ -184,22 +184,21 @@ display:none;
 }
 .drone-info {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     margin-top: 35px;
-    justify-content: space-between;
+    align-items: center;
 }
 
 .drone-img {
     width: 50%;
 }
 
-.drone-img-left {
+.blue {
     background: linear-gradient(to right, #33ccff 0%, #ff99cc00 100%);
 }
 
-.drone-img-right {
-    background: linear-gradient(to left, #ff4f8e 0%, #ff99cc00 100%);
+.pink {
+    background: linear-gradient(to right, #ff0066 0%, #ff99cc00 100%);
 }
 
 .drone-img img {
@@ -207,7 +206,8 @@ display:none;
 }
 
 .drone-data{
-    padding: 20px 20px 0 20px;
+    padding: 20px 20px 0 60px;
+    flex-grow: 2;
 }
 
 .pilot-info{
@@ -271,19 +271,15 @@ footer{
         letter-spacing: 6px;
     }
 
-    .drone-info {
-        justify-content: center;
-    }
-
     .drone-img {
         width: 100%;
     }
 
-    .drone-img-left {
+    .blue {
         background-color: #33ccff;
     }
 
-    .drone-img-right {
+    .pink {
         background-color: #ff4f8e;
     }
 
