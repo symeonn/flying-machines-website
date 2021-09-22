@@ -39,8 +39,8 @@ display:none;
 }
 
 .padding-sides-small {
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .opacity{
@@ -225,11 +225,13 @@ display:none;
 .pilot-data {
     padding: 20px;
 }
+
 .join-details i{
     padding-right: 10px;
 }
+
 .speres-embedded iframe {
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 footer{
