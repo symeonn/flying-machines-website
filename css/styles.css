@@ -227,8 +227,11 @@ display:none;
 }
 .join-details i{
     padding-right: 10px;
-
 }
+.speres-embedded iframe {
+    margin: 10px 0;
+}
+
 footer{
     background-color: #eaeaea;
 }
