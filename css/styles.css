@@ -187,11 +187,19 @@ display:none;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 35px;
+    justify-content: space-between;
 }
 
 .drone-img {
     width: 50%;
+}
+
+.drone-img-left {
     background: linear-gradient(to right, #33ccff 0%, #ff99cc00 100%);
+}
+
+.drone-img-right {
+    background: linear-gradient(to left, #ff4f8e 0%, #ff99cc00 100%);
 }
 
 .drone-img img {
@@ -269,7 +277,14 @@ footer{
 
     .drone-img {
         width: 100%;
+    }
+
+    .drone-img-left {
         background-color: #33ccff;
+    }
+
+    .drone-img-right {
+        background-color: #ff4f8e;
     }
 
     .pilot-info {
