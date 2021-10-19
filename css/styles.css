@@ -7,6 +7,7 @@ body {
     overflowY: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    font-size: 2vh;
 }
 
 body::-webkit-scrollbar {
@@ -144,6 +145,8 @@ display:none;
     -webkit-box-shadow: 0 7px 14px 0 rgb(65 69 88 / 10%), 0 3px 6px 0 rgb(0 0 0 / 7%);
     box-shadow: 0 7px 14px 0 rgb(65 69 88 / 10%), 0 3px 6px 0 rgb(0 0 0 / 7%);
     margin: 35px 0 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .service-box video{
@@ -189,6 +192,24 @@ display:none;
     align-items: center;
 }
 
+.anafi {
+        background-image: url(../assets/background1.webp);
+        background-attachment: fixed;
+        /* background-size: cover; */
+        background-repeat: no-repeat;
+        /* background-position-y: 8vh; */
+        background-size: contain;
+}
+
+.mavic-mini {
+    background-image: url(../assets/background2.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 31vh;
+    background-size: contain;
+}
+
 .drone-img {
     width: 50%;
 }
@@ -201,13 +222,15 @@ display:none;
     background: linear-gradient(to right, #ff0066 0%, #ff99cc00 100%);
 }
 
-.drone-img img {
-    width: 100%;
+.drone-info img {
+    width: 40%;
 }
 
 .drone-data{
     padding: 20px 20px 0 60px;
     flex-grow: 2;
+    color: black;
+    text-shadow: 0px 0px 6px #ffffff;
 }
 
 .pilot-info{
@@ -271,8 +294,27 @@ footer{
         letter-spacing: 6px;
     }
 
-    .drone-img {
+    .drone-info img {
         width: 100%;
+    }
+
+    .drone-data{
+        font-size: initial;
+    }
+
+    .anafi {
+        background-image: url(../assets/background1.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: initial;
+    }
+
+    .mavic-mini {
+        background-image: url(../assets/background2.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: initial;
+        background-position-y: 0;
     }
 
     .blue {
