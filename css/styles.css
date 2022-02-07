@@ -33,6 +33,7 @@ display:none;
 .section-gray {
     background-color: #afafaf;
     color: white;
+    box-shadow: 0px -7px 14px -8px rgb(0 0 0 / 25%), 0px 7px 14px -8px rgb(0 0 0 / 25%);
 }
 .padding-sides {
     padding-left: 15%;
@@ -60,6 +61,7 @@ display:none;
     width: 100%;
     z-index: 1;
     top: 0;
+    color: black;
 }
 
 .top-menu-item{
@@ -88,7 +90,7 @@ display:none;
 .banner-video video {
     width: 100%;
     object-fit: cover;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .banner-content {
@@ -113,7 +115,7 @@ display:none;
     letter-spacing: 20px;
 }
 
-.title-sub{
+.title-sub {
     font-size: 1vw;
     letter-spacing: 30px;
 }
@@ -188,26 +190,26 @@ display:none;
 .drone-info {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 35px;
+    margin: 35px 0 55px 0;
     align-items: center;
+    box-shadow: 0px 7px 14px -8px inset rgb(0 0 0 / 25%), 0px -7px 14px -8px inset rgb(0 0 0 / 25%);
+    min-height: 25em;
 }
 
 .anafi {
         background-image: url(../assets/background1.webp);
         background-attachment: fixed;
-        /* background-size: cover; */
         background-repeat: no-repeat;
         /* background-position-y: 8vh; */
-        background-size: contain;
+        background-size: cover;
 }
 
 .mavic-mini {
     background-image: url(../assets/background2.webp);
     background-attachment: fixed;
-    background-size: cover;
+        /* background-position-y: 31vh; */
     background-repeat: no-repeat;
-    background-position-y: 31vh;
-    background-size: contain;
+    background-size: cover;
 }
 
 .drone-img {
