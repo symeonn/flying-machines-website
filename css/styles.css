@@ -4,10 +4,10 @@ html {
 
 body {
     background-color: #f8f8f8;
-    overflowY: hidden;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
     font-size: 2vh;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-x: clip;
 }
 
 body::-webkit-scrollbar {
