@@ -270,7 +270,11 @@ display:none;
     padding-right: 10px;
 }
 
-.speres-embedded iframe {
+.yt-embedded {
+    height: 20em;
+}
+
+.spheres-embedded iframe {
     margin: 20px 0;
 }
 
