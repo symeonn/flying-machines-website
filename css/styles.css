@@ -278,8 +278,20 @@ display:none;
     margin: 20px 0;
 }
 
-footer{
+.footer {
     background-color: #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer img {
+    margin: 0 5px;
+    height:25px;
+}
+
+.footer p {
+    margin: 0;
 }
 
 @media only screen and (max-device-width: 1300px){
